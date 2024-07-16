@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(to left,#5c1f17,#791af5);
+    background: linear-gradient(to left,#64338b,#996e3d);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     margin: 0;
     height: 100vh;
     width: 100%;
-}
+    font-family: "Gill Sans", sans-serif;}
 h1{
     text-align: center;
     font-size: 40px ;
@@ -13,4 +13,14 @@ h1{
 form {
 text-align: center;
 border: 3px solid black;
+justify-content: center;
+border-width: 50%;
+margin: 250px;
+height: 300px;
+padding: 20px;
+width:60%;
+display: grid;
+}
+textarea{
+
 }
