@@ -16,7 +16,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	tmpl, err := template.ParseFiles("templates/index.html")
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 
@@ -26,7 +26,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	err = tmpl.Execute(w, nil)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 }
