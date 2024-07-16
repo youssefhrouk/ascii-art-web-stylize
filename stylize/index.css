@@ -1,8 +1,16 @@
 body {
-    background: linear-gradient(to left,#34a0a4,#c9ada7);
+    background: linear-gradient(to left,#5c1f17,#791af5);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin: 0;
     height: 100vh;
     width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 40px ;
+}
+form {
+text-align: center;
+border: 3px solid black;
 }
