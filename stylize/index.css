@@ -90,3 +90,16 @@ form {
     padding: 0 25px;
   }
 } */
+table{
+  border: #000000 solid 5px;
+  border-radius: 8px;
+  text-shadow: #422800;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+pre{
+  overflow: auto;
+
+}
