@@ -2,11 +2,12 @@ body {
     background: linear-gradient(to bottom,#a7dbdd,#7bc4c9);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0;
+    margin-top: 0px;
     height: 100vh;
-    width: 100%;
-    font-family: "Gill Sans", sans-serif;}
+    font-family: "Gill Sans", sans-serif;
+}
 h1 {
+    font-size: 17px;
     color: #ffffff;
     text-align: center;
 }
