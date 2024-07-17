@@ -22,7 +22,7 @@ form {
     height: 200px;
     padding: 20px;
     /* width:60%; */
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     /* box-align: center; */
