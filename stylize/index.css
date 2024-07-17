@@ -1,20 +1,19 @@
 body {
-    background: linear-gradient(to right,#236428,#000000);
+    background: linear-gradient(to bottom,#236428,#000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     height: 100vh;
     width: 100%;
     font-family: "Gill Sans", sans-serif;}
-h1{
+h1 {
     color: #ffffff;
     text-align: center;
-    font-size: 40px ;
 }
 form {
     text-align: center;
     border-style: solid;
-    border-width: 10px;
+    border-width: 4px;
     border-color: #ffffff;
     border-radius: 10px;
     justify-content: center;
@@ -24,4 +23,5 @@ form {
     padding: 20px;
     width:60%;
     display: grid;
+    box-align: center;
 }
