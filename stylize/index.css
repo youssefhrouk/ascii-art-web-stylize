@@ -17,7 +17,7 @@ form {
     border-width: 4px;
     border-color: #ffffff;
     border-radius: 10px;
-    box-shadow: #3b3936 4px 4px 0 0;
+    box-shadow: #000000 5px 4px 0 0;
     justify-content: center;
     border-width: 50%;
     margin: 100px;
@@ -71,7 +71,9 @@ form {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
-  
+.label {
+  font-family:"Press Start 2P", system-ui;
+}
 
 /* @media (min-width: 768px) {
   .button {
