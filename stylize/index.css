@@ -107,11 +107,19 @@ table{
   z-index: 2;
   margin: 0 auto ;
 }
-
+.aze {
+  text-align: center;
+  color: red;
+  justify-content: center;
+  display: flex;
+  margin: 1rem auto;
+  z-index: 2;
+  margin-bottom: 50px;
+}
 
 .line {
   width: 80%;
   border-top: 2px solid #422800;
   margin: 20px 0;
+  margin:0 auto;
 }
-.button
