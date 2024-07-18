@@ -94,12 +94,24 @@ table{
   border: #000000 solid 5px;
   border-radius: 8px;
   text-shadow: #422800;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   margin: 10% auto;
+  position: relative;
+  max-width: 100px;
 }
-pre{
+.hoo {
+  height: 150px;
+  width: 390px;
   overflow: auto;
-
+  position: relative;
+  z-index: 2;
+  margin: 0 auto ;
 }
+
+
+.line {
+  width: 80%;
+  border-top: 2px solid #422800;
+  margin: 20px 0;
+}
+.button
