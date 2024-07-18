@@ -1,10 +1,9 @@
 body {
-    background: linear-gradient(to bottom,#a7dbdd,#7bc4c9);
+    background: linear-gradient(to bottom,#79c7ca,#000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 0px;
     height: 100vh;
-    font-family: "Gill Sans", sans-serif;
 }
 h1 {
     font-size: 17px;
@@ -91,6 +90,7 @@ form {
   }
 } */
 table{
+  background-color: #ffffff;
   border: #000000 solid 5px;
   border-radius: 8px;
   text-shadow: #422800;
