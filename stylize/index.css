@@ -1,13 +1,20 @@
 body {
-    background: linear-gradient(to bottom,#79c7ca,#000000);
+    background: linear-gradient(to top,#79c7ca,#000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 0px;
     height: 100vh;
 }
 h1 {
-    font-size: 17px;
+    font-family: monospace; 
+    font-size: 17px; 
     color: #ffffff;
+    text-shadow: 
+      1px 1px 0 #000000, 
+      2px 2px 0 #444444,
+      3px 3px 0 #888888, 
+      4px 4px 0 #cccccc;
+    line-height: 1.2;
     text-align: center;
 }
 form {
@@ -92,12 +99,14 @@ form {
 table{
   background-color: #ffffff;
   border: #000000 solid 5px;
+  box-shadow: #000000 5px 4px 0 0;
   border-radius: 8px;
   text-shadow: #422800;
   text-align: center;
   margin: 10% auto;
-  position: relative;
   max-width: 100px;
+  width: 30cm;
+  height: 6cm;
 }
 .hoo {
   height: 150px;
@@ -108,8 +117,6 @@ table{
   margin: 0 auto ;
 }
 .aze {
-  text-align: center;
-  color: red;
   justify-content: center;
   display: flex;
   margin: 1rem auto;
