@@ -98,7 +98,7 @@ form {
     padding: 0 25px;
   }
 } */
-table{
+.table{
   background-color: #ffffff;
   border: #000000 solid 5px;
   box-shadow: #000000 5px 4px 0 0;
@@ -107,8 +107,8 @@ table{
   text-align: center;
   margin: 10% auto;
   max-width: 100px;
-  width: 30cm;
-  height: 6cm;
+  width: 60cm;
+  height: 10cm;
 }
 
 .aze { 
