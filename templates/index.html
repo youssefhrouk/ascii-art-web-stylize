@@ -7,7 +7,7 @@
     <title>Ascii-Art-Web</title>
 </head>
 <body>
-    <h1>
+    <h1 onclick="reloadPage()">
     <pre>
         _____                   .__ .__             _____             __             __      __         ___.    
         /  _  \    ______  ____  |__||__|           /  _  \  _______ _/  |_          /  \    /  \  ____  \_ |__  
@@ -31,5 +31,10 @@
         </select>
         <input class="button" type="submit" value="Generate">
     </form>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
 </body>
 </html>
