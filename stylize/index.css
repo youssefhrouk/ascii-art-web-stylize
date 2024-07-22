@@ -60,15 +60,18 @@ h1 a{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-align: center;
 }
 
 .button:hover {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .button:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
+  text-align: center;
 }
 .textarea {
   border: 5px solid #422800;
@@ -97,7 +100,19 @@ h1 a{
   font-family:"Press Start 2P", system-ui;
   font-size: 15px;
 }
-
+/* pre {
+  background-color: #ffffff;
+  text-align: left;
+  margin: 0 auto 50px;
+  position: relative;
+  z-index: 1;
+  height: 5cm;
+  width: 45cm;
+  overflow-x:auto;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto ;
+} */
 table{
   background-color: #ffffff;
   border: #000000 solid 5px;
@@ -108,6 +123,8 @@ table{
   margin: 0 auto 50px;
   position: relative;
   z-index: 1;
+  margin: 90px auto;
+  /* display: flex; */
 
 }
 .btn { 
@@ -115,15 +132,20 @@ table{
   display: flex;
   margin: 1rem auto;
   z-index: 2;
+  text-align: center;
+  display: flex;
 }
 
 table tbody tr td pre {
-  height: 15cm;
+  height: 5cm;
   width: 45cm;
   overflow-x:auto;
+  overflow-y: auto;                                                            
+                                                                                                                                                                                                                                                                  
   position: relative;
   z-index: 2;
   margin: 0 auto ;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
