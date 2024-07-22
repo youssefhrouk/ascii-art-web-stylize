@@ -11,8 +11,8 @@ import (
 func main() {
 	http.HandleFunc("/", ascii.IndexHandler)
 	http.HandleFunc("/ascii-art", ascii.AsciiHandler)
-	stylz := http.FileServer(http.Dir("stylize"))
-	http.Handle("/css/", http.StripPrefix("/css", stylz))
+	stylize := http.FileServer(http.Dir("stylize"))
+	http.Handle("/css/", http.StripPrefix("/css", stylize))
 
 	// Start the server
 

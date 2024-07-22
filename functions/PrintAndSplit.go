@@ -14,7 +14,7 @@ func PrintAndSplit(input, banner string) string {
 		return "Invalid input"
 	}
 
-	splited := strings.Split(validArg, string([]byte{13, 10}))
+	splited := strings.Split(validArg, "\r\n")
 	bannerPath := GetBannerPath(banner)
 	if strings.HasPrefix(bannerPath, "Error:") {
 		return bannerPath
