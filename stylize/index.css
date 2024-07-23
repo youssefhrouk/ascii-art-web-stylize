@@ -1,48 +1,40 @@
 body {
-  background: linear-gradient(to top,#79c7ca,#000000);
+  background: linear-gradient(to top, #79c7ca, #000000);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   height: 1000px;
-  
 }
+
 form {
   h1 {
-    font-family:"Press Start 2P", system-ui;
-    font-size: 30px; 
-    color: #ffffff;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 30px;
+    color: #e0e0e0;
     text-shadow: 
-      1px 1px 0 #000000, 
-      2px 2px 0 #444444,
-      3px 3px 0 #888888, 
-      4px 4px 0 #cccccc;
+    1px 1px 0 #000000,
+    2px 2px 0 #444444,
+    3px 3px 0 #888888,
+    4px 4px 0 #cccccc;
     line-height: 1.2;
     text-align: center;
     cursor: pointer;
   }
   background: #c4c4c4;
   text-align: center;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #ffffff;
+  border: 4px solid #ffffff;
   border-radius: 10px;
   box-shadow: #000000 5px 4px 0 0;
-  justify-content: center;
-  border-width: 50%;
-  margin: 50% auto;
-  height: 600px;
+  margin: 50px auto;
   padding: 20px;
-  display: grid;
-  width: 1000px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 90%;
   max-width: 600px;
-  margin-top: 40px;
 }
-h1 a{
-  text-decoration: none;
-  
-}
+
 .button {
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -60,158 +52,152 @@ h1 a{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  text-align: center;
+  margin-top: 10px;
 }
 
 .button:hover {
   background-color: #ffffff;
-  text-align: center;
 }
 
 .button:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
-  text-align: center;
 }
+
 .textarea {
   border: 5px solid #422800;
   border-radius: 5px;
   box-shadow: #422800 4px 4px 0 0;
   resize: none;
-  width: 12cm;
-  height: 3cm; 
-  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
 }
-/* .textarea:active {
+
+.textarea:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
-} */
+}
+
 .select {
   border-radius: 8px;
   box-shadow: #422800 4px 4px 0 0;
   font-size: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
 }
 
 .select:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
+
 .label {
-  font-family:"Press Start 2P", system-ui;
+  font-family: "Press Start 2P", system-ui;
   font-size: 15px;
+  margin-top: 10px;
 }
-/* pre {
+
+table {
   background-color: #ffffff;
-  text-align: left;
-  margin: 0 auto 50px;
-  position: relative;
-  z-index: 1;
-  height: 5cm;
-  width: 45cm;
-  overflow-x:auto;
-  position: relative;
-  z-index: 2;
-  margin: 0 auto ;
-} */
-table{
-  background-color: #ffffff;
-  border: #000000 solid 5px;
+  border: 5px solid #000000;
   box-shadow: #000000 5px 4px 0 0;
   border-radius: 8px;
-  text-shadow: #422800;
-  text-align: left;
-  margin: 0 auto 50px;
-  position: relative;
-  z-index: 1;
-  margin: 90px auto;
-  /* display: flex; */
-
+  margin: 50px auto;
+  width: 90%;
+  max-width: 600px;
+  overflow: hidden;
 }
-.btn { 
+
+.btn {
   justify-content: center;
   display: flex;
   margin: 1rem auto;
-  z-index: 2;
-  text-align: center;
-  display: flex;
 }
 
 table tbody tr td pre {
-  height: 5cm;
-  width: 45cm;
-  overflow-x:auto;
-  overflow-y: auto;                                                            
-                                                                                                                                                                                                                                                                  
-  position: relative;
-  z-index: 2;
-  margin: 0 auto ;
-  display: flex;
+  height: 400px;
+  width: 100%;
+  max-width: 90vw;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
   * {
-     margin: 0; 
-      padding: 0; 
-      box-sizing: border-box;
-   }
-    body {
-        margin: 50px auto;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    form {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-    }
-    .textarea {
-        height: 4cm;
-        width:fit-content;
-    }
-    .select {
-        font-size: 16px;
-    }
-    .label {
-        font-size: 1.2rem;
-    }
-    table tbody tr td pre {
-      height: 40vh;  
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 50px auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  form {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .textarea {
+    height: 160px;
+    width: 100%;
+  }
+  .select {
+    font-size: 16px;
+  }
+  .label {
+    font-size: 1.2rem;
+  }
+  table {
+    width: 100%;
+  }
+  table tbody tr td pre {
+    height: 300px;
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 480px) {
-  * { margin: 0;
-     padding: 0;
-      box-sizing: border-box;
-    }
-  body{
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
     margin: 90px auto;
-    }
-    h1 {
-      font-size: 1%;
-    }
-    form {
-        margin: 90px auto;
-        height: auto;
-        padding: 5px;
-        
-    }
-    .textarea {
-        height: 3cm;
-        width:fit-content;
-    }
-    .select {
-        font-size: 14px;
-    }
-    .label {
-        font-size: 1rem;
-    }
-    .button {
-        font-size: 16px;
-        padding: 0 10px;
-        line-height: 40px;
-    }
-    table tbody tr td pre {
-        height: 40vh;  
-      }
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  form {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+  }
+  .textarea {
+    height: 120px;
+    width: 100%;
+  }
+  .select {
+    font-size: 14px;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 40px;
+  }
+  table {
+    width: 100%;
+  }
+  table tbody tr td pre {
+    height: 300px;
+    width: 100%;
+  }
 }
