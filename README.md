@@ -1,19 +1,32 @@
-# Ascii-Art-Web
+# ascii-art-stylize
 
-## Description
-Ascii-Art-Web is a web application that converts text input into ASCII art. Designed to explore web development concepts using Go, users can input text, choose a banner style, and generate ASCII art through a simple web interface.
+## Objectives
+The goal of this project is to enhance the original Ascii-Art-Web by making the site:
+- More appealing, interactive, and intuitive
+- More user-friendly
+- Provide more feedback to the user
+- **Responsive**: Ensuring the site works well on various devices and screen sizes
+
+## Instructions
+To achieve the objectives, the project must meet the following requirements:
+- The project must contain CSS to style the website.
+- The code must follow good coding practices.
+- The text must be legible regardless of the colors used.
+- The website must be consistent, responsive, and interactive.
+
+We recommend researching the principles of good website design to guide your enhancements.
 
 ## Features
-- Convert input text to ASCII art
-- Multiple banner styles: standard, shadow, and thinkertoy
-- Web-based user interface
-- Error handling for invalid inputs and requests
+- **Convert input text to ASCII art**: Users can input text and choose from multiple banner styles (standard, shadow, and thinkertoy) to generate ASCII art.
+- **Improved User Interface**: Enhanced UI with CSS for a more appealing and user-friendly experience.
+- **Responsive Design**: Ensures the website is usable on various devices and screen sizes.
+- **Interactive Elements**: Provides feedback to users through interactive elements.
 
 ## Technologies Used
-- Backend: Go (Golang)
-- Frontend: HTML
-- HTTP Server: Go's net/http package
-- Templates: Go's html/template package
+- **Backend**: Go (Golang)
+- **Frontend**: HTML, CSS
+- **HTTP Server**: Go's `net/http` package
+- **Templates**: Go's `html/template` package
 
 <!DOCTYPE html>
 <meta charset="UTF-8">
@@ -28,7 +41,7 @@ Ascii-Art-Web is a web application that converts text input into ASCII art. Desi
 <body>
     <h1>Ascii-Art-Web Project Structure</h1>
     <pre>
-ascii-art-web/
+ascii-art-stylize/
 ├── main.go
 ├── Handlers/
 │   ├── AsciiHandler.go
@@ -44,13 +57,15 @@ ascii-art-web/
 └── templates/
     ├── index.html
     └── ascii-art.html
+└── stylize/
+    └── index.css
     </pre>
 </body>
 
 ## Usage
 1. Run the application:
 2. Open a web browser and visit `http://localhost:8080`
-3. Enter text in the input field, select a banner style, and click "Generate ASCII Art" to create ASCII art
+3. Enter text in the input field, select a banner style, and click "Generate" to create ASCII art
 
 ## API Endpoints
 - GET `/`: Displays the main page with the input form
