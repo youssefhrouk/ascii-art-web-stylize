@@ -7,14 +7,10 @@ import (
 	ascii "ascii/functions"
 )
 
+// handles the ASCII art generation requests
 func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		http.Error(w, "405 : Method Not Allowed", http.StatusMethodNotAllowed)
-		return
-	}
-	err := r.ParseForm()
-	if err != nil {
-		http.Error(w, "400 : Bad Request - "+err.Error(), http.StatusBadRequest)
 		return
 	}
 
