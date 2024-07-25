@@ -15,6 +15,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "405 : Method Not Allowed", http.StatusMethodNotAllowed)
 		return
 	}
+
 	tmpl, err := template.ParseFiles("templates/index.html") // it loads and analyzes the page from the directroy if it doesn't exist we get an error
 	if err != nil {
 		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)
@@ -25,6 +26,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r) // print not found page
 		return
 	}
+	
 	err = tmpl.Execute(w, nil)
 	if err != nil {
 		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)

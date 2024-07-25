@@ -7,11 +7,20 @@
     <title>Ascii-Art-Web</title>
 </head>
 <body>
+    <h1 onclick="reloadPage()">
+    <pre>
+        _____                   .__ .__             _____             __             __      __         ___.    
+        /  _  \    ______  ____  |__||__|           /  _  \  _______ _/  |_          /  \    /  \  ____  \_ |__  
+       /  /_\  \  /  ___/_/ ___\ |  ||  |  ______  /  /_\  \ \_  __ \\   __\  ______ \   \/\/   /_/ __ \  | __ \ 
+      /    |    \ \___ \ \  \___ |  ||  | /_____/ /    |    \ |  | \/ |  |   /_____/  \        / \  ___/  | \_\ \
+      \____|__  //____  > \___  >|__||__|         \____|__  / |__|    |__|             \__/\  /   \___  > |___  /
+              \/      \/      \/                          \/                                \/        \/      \/ 
+    </pre>
+    </h1>
     <form method="post" action="/ascii-art">
-        <h1 onclick="reloadPage()">Ascii-Art-Web</h1>
         <label for="txt" class="label">Enter your text here:</label>
         <br>
-        <textarea class="textarea" rows="5" cols="30" type="text" id="txt" name="input" required></textarea>
+        <textarea class="textarea" type="text" id="txt" name="input" maxlength="200" required></textarea>
         <br>
         <label for="banner" class="label">Select Banner:</label>
         <select class="select" id="banner" name="banner" required>
