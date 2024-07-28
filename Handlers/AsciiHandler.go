@@ -20,7 +20,7 @@ func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "400 : Bad Request - Input and banner selection are required", http.StatusBadRequest)
 		return
 	}
-	if len(input) > 1000 {
+	if len(input) >= 1000 {
 		http.Error(w, "400 : Bad Request - Input exceeds the maximum allowed length of 1000 characters", http.StatusBadRequest)
 		return
 	}
@@ -32,7 +32,7 @@ func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	tmpl, err := template.ParseFiles("templates/ascii-art.html")
 	if err != nil {
-		http.Error(w, "404 : Not Found - "+err.Error(), http.StatusNotFound)
+		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 

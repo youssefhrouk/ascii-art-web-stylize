@@ -20,20 +20,21 @@ h1 {
   cursor: pointer;
 }
 
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 30px;
+  color: #e0e0e0;
+  text-shadow: 
+  1px 1px 0 #000000,
+  2px 2px 0 #444444,
+  3px 3px 0 #888888,
+  4px 4px 0 #cccccc;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+
 form {
-  h1 {
-    font-family: "Press Start 2P", system-ui;
-    font-size: 30px;
-    color: #e0e0e0;
-    text-shadow: 
-    1px 1px 0 #000000,
-    2px 2px 0 #444444,
-    3px 3px 0 #888888,
-    4px 4px 0 #cccccc;
-    line-height: 1.2;
-    text-align: center;
-    cursor: pointer;
-  }
   background: #c4c4c4;
   text-align: center;
   border: 4px solid #ffffff;
@@ -47,7 +48,14 @@ form {
   width: 90%;
   max-width: 600px;
 }
-
+p {
+  width: 100%;
+  text-align: right;
+  margin-top: 15px;
+  color: #000000;
+  font-size: 1rem;
+  margin-right: 80px;
+}
 .button {
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -155,6 +163,10 @@ table tbody tr td pre {
     height: auto;
     padding: 10px;
   }
+  p {
+    font-size: 0.9rem; 
+    margin-right: 5px;
+  }
   .textarea {
     height: 160px;
     width: 100%;
@@ -190,6 +202,10 @@ table tbody tr td pre {
     width: 90%;
     height: auto;
     padding: 5px;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-right: 2px;
   }
   .textarea {
     height: 120px;
