@@ -12,8 +12,9 @@
         <h1 onclick="reloadPage()">Ascii Art Web</h1>
         <label for="txt" class="label">Enter your text here:</label>
         <br>
-        <textarea class="textarea" type="text" id="txt" name="input" maxlength="1000" required></textarea>
-        <p>1000 characters allowed</p>
+        <textarea class="textarea" placeholder="Type something here.." id="txt" name="input" maxlength="1000" required 
+                  oninput="CountChar()"></textarea>
+        <p><span id="char-count">0</span>/1000</p>
         <br>
         <label for="banner" class="label">Select Banner:</label>
         <select class="select" id="banner" name="banner" required>
@@ -21,11 +22,16 @@
             <option value="shadow">Shadow</option>
             <option value="thinkertoy">Thinkertoy</option>
         </select>
-        <input class="button" type="submit" value="Generate">
+        <input class="button" type="submit">
     </form>
     <script>
         function reloadPage() {
             location.reload();
+        }
+        function CountChar() {
+            const textarea = document.getElementById('txt');
+            const charCount = document.getElementById('char-count');
+            charCount.textContent = textarea.value.length;
         }
     </script>
 </body>
