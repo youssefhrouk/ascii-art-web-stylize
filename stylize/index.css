@@ -43,6 +43,20 @@ p {
   font-size: 1rem;
   margin-right: 80px;
 }
+.www {
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.error-image {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  padding: 20px;
+}
+
 .button {
   background-color: #fbeee0;
   border: 2px solid #422800;
