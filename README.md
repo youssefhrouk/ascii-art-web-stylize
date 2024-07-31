@@ -45,6 +45,7 @@ ascii-art-stylize/
 ├── main.go
 ├── Handlers/
 │   ├── AsciiHandler.go
+│   │── ErrorHandler.go
 │   └── IndexHandler.go
 ├── ascii/
 │   ├── PrintAndSplit.go
@@ -56,6 +57,7 @@ ascii-art-stylize/
 │   └── ValidateInput.go
 └── templates/
     ├── index.html
+    ├── error.html
     └── ascii-art.html
 └── stylize/
     └── index.css
