@@ -10,29 +10,31 @@ import (
 // handles the ASCII art generation requests
 func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
-		http.Error(w, "405 : Method Not Allowed", http.StatusMethodNotAllowed)
+		ErrorHandler(w, "405 : Method Not Allowed", http.StatusMethodNotAllowed)
 		return
 	}
 
 	input := r.FormValue("input")
 	banner := r.FormValue("banner")
 	if input == "" || banner == "" {
-		http.Error(w, "400 : Bad Request - Input and banner selection are required", http.StatusBadRequest)
+		ErrorHandler(w, "400 : Bad Request - Input and banner selection are required", http.StatusBadRequest)
 		return
 	}
-	if len(input) >= 1000 {
-		http.Error(w, "400 : Bad Request - Input exceeds the maximum allowed length of 1000 characters", http.StatusBadRequest)
+
+	if len(input) > 1000 {
+		ErrorHandler(w, "400 : Bad Request - Input exceeds the maximum allowed length of 1000 characters", http.StatusBadRequest)
 		return
 	}
 
 	output, status := ascii.PrintAndSplit(input, banner)
 	if status != http.StatusOK {
-		http.Error(w, output, status)
+		ErrorHandler(w, output, status)
 		return
 	}
+
 	tmpl, err := template.ParseFiles("templates/ascii-art.html")
 	if err != nil {
-		http.Error(w, "Status Internal Server Error", http.StatusInternalServerError)
+		ErrorHandler(w, "500 : Internal Server Error", http.StatusInternalServerError)
 		return
 	}
 
@@ -40,9 +42,7 @@ func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 		Message: output,
 	}
 
-	err = tmpl.Execute(w, data)
-	if err != nil {
-		http.Error(w, "500 : Internal Server Error - ", http.StatusInternalServerError)
-		return
+	if err := tmpl.Execute(w, data); err != nil {
+		ErrorHandler(w, "500 : Internal Server Error", http.StatusInternalServerError)
 	}
 }
